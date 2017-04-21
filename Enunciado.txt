@@ -1,0 +1,12 @@
+PRACTICA Tienda Animales
+
+Pagina Principal
+	- Header
+	- Footer
+	- Bloque de fichitas de animales
+	
+
+Pagina Detalle
+	- Header
+	- Footer
+	- Detalle del animal
