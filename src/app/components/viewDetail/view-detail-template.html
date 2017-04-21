@@ -13,4 +13,22 @@
         metodo-paterno = "compoPadre.setBar()"
     ></componente-hijo>
 
+    <!-- Las propiedades y métodos del controlador se interpretan en las templates cuando van dentro del par de llaves -->
+    <!--{{ compoPadre.foo }} -->
+    <header>
+        <view-header></view-header>
+    </header>
+
+    <p>Esto es el View Detail</p>
+
+        <view-footer></view-footer>
+    </footer>
+
+    <!-- Un componente hijo al que le vamos a pasar tres cosas:
+        una propiedad - string (@)
+        una propiedad cuyo valor debe "interpretar" (<)
+        un método del componente padre
+    -->
+
+
 </article>
