@@ -1,0 +1,21 @@
+<section>
+    <h1>Introuzca los datos del nuevo animal</h1>
+    <h4>tigre, oso, serpiente, koala, unicornio, mono, pitufo</h4>
+    <div class="div-img-detail">
+
+        <div class="button-bar">
+            
+            <div class="txt-error" ng-show="!addAnimal.valuesOK">ERROR</div> 
+            <input type="text" ng-model="addAnimal.name" ng-class="{ 'has-error' : !addAnimal.name && !addAnimal.valuesOK }">
+
+            <select ng-model="addAnimal.type" ng-class="{ 'has-error' : !addAnimal.type && !addAnimal.valuesOK }">
+            <option value="mamiferos">Mamiferos</option>
+            <option value="otros">Otros</option>
+            <option value="">-- choose an option --</option>
+
+       </select>
+            <button ng-click="addAnimal.addAnimalToList()">Confirmar</button>
+            <button ng-click="addAnimal.goToMain()">Cancelar</button>
+        </div>
+    </div>
+</section>

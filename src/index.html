@@ -14,10 +14,17 @@
 
 <body ng-app="app" ng-strict-di>
 
-    <view-main></view-main>
-    
+    <section class="main-container">
+        <!-- aquí se irán renderizando los componentes indicados en el router -->
+    <view-header></view-header>
+        <ui-view></ui-view>        
+        <view-footer></view-footer>
+    </section>    
+
     <!-- angular -->
     <script src="vendor/angular.min.js"></script>
+    <script src="vendor/angular-ui-router.min.js"></script>
+    <script src="vendor/angular-animate.min.js"></script>
 
     <!-- our app -->
     <script src="app/app.js"></script>
@@ -32,6 +39,10 @@
     <script src="app/components/commons/header/header.js"></script>
     <script src="app/components/commons/footer/footer.js"></script>
 
+    <script src="app/components/viewDetail/view-detail.js"></script>
+    <script src="app/components/addLion/add-lion.js"></script>
+    <script src="app/components/addAnimal/add-animal.js"></script>
+    <script src="app/components/updAnimal/upd-animal.js"></script>
 
 
 </body>

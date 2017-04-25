@@ -1,13 +1,17 @@
 <article>
     <!-- Las propiedades y métodos del controlador se interpretan en las templates cuando van dentro del par de llaves -->
     <!--{{ compoPadre.foo }} -->
+    <div class="list-animals">
+        <h1>LISTA ANIMALES</h1>
+        <animals-card 
+            ng-repeat="item in listAnimals.AllAnimals | orderBy: 'id'" 
+            item-animal="item" 
+            ng-click="listAnimals.goToDetail(item.id)"
+            
+            >
+        </animals-card>
+        <div class="button-bar">
 
-    <h1>LISTA ANIMALES</h1>
-    <animals-card
-    ng-repeat="item in listAnimals.AllAnimals" 
-    item-animal="item" 
-    >
-
-
-</animals-card>
+        </div>
+    </div>
 </article>

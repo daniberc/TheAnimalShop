@@ -11,6 +11,9 @@
 
   function animalsCard() {
     var vm = this;
+
+        // Al clicar sobre un elemento de la lista, nos vamos al detalle
+
   }
 
 })(angular);

@@ -2,7 +2,12 @@
     <!-- Las propiedades y métodos del controlador se interpretan en las templates cuando van dentro del par de llaves -->
     <!--{{ compoPadre.foo }} -->
 
-    <h1>FOOTER</h1>
+    <footer 
+    class="main-footer"
+    ng-click="viewFooter.goToAbout()"
+    >
+    FOOTER
+    </footer>
     <!-- Un componente hijo al que le vamos a pasar tres cosas:
         una propiedad - string (@)
         una propiedad cuyo valor debe "interpretar" (<)

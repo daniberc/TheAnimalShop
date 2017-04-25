@@ -1,34 +1,6 @@
-<article>
-    <!-- Las propiedades y métodos del controlador se interpretan en las templates cuando van dentro del par de llaves -->
-    <!--{{ compoPadre.foo }} -->
-
-    <!-- Un componente hijo al que le vamos a pasar tres cosas:
-        una propiedad - string (@)
-        una propiedad cuyo valor debe "interpretar" (<)
-        un método del componente padre
-    -->
-    <componente-hijo
-        propiedad-cadena = "Uka lele"
-        propiedad-interpretada = "compoPadre.bar" 
-        metodo-paterno = "compoPadre.setBar()"
-    ></componente-hijo>
-
-    <!-- Las propiedades y métodos del controlador se interpretan en las templates cuando van dentro del par de llaves -->
-    <!--{{ compoPadre.foo }} -->
-    <header>
-        <view-header></view-header>
-    </header>
-
-    <p>Esto es el View Detail</p>
-
-        <view-footer></view-footer>
-    </footer>
-
-    <!-- Un componente hijo al que le vamos a pasar tres cosas:
-        una propiedad - string (@)
-        una propiedad cuyo valor debe "interpretar" (<)
-        un método del componente padre
-    -->
-
-
-</article>
+<section>
+    <h1 class="detail-title">{{viewDetail.detailAnimal.name}}</h1>
+    <div class="div-img-detail">
+        <img ng-src="app/styles/imgs/{{viewDetail.detailAnimal.img}}" class="detail-animals-card-img">
+    </div>    
+</section>

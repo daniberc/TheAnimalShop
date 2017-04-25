@@ -1,26 +1,15 @@
 <article>
     <!-- Las propiedades y métodos del controlador se interpretan en las templates cuando van dentro del par de llaves -->
     <!--{{ compoPadre.foo }} -->
-    <header>
-        <view-header></view-header>
-    </header>
-
-    <p>Esto es el View Main</p>
-    
-    <div>
-        <list-animals>
-        </list-animals>
+    <div class="main-container">
+        <div class="view-main">
+            <list-animals></list-animals>
+        </div>
+        <div class="main-section-button">
+            <button ng-click="viewMain.goToAddLion()">Añadir Léon</button>
+            <button ng-click="viewMain.goToAddAnimal()">Añadir Animal</button>
+            <button ng-click="viewMain.goToUpdAnimal()">Actualizar Animal</button>
+        </div>
     </div>
-
-    <footer>
-        <view-footer></view-footer>
-    </footer>
-
-    <!-- Un componente hijo al que le vamos a pasar tres cosas:
-        una propiedad - string (@)
-        una propiedad cuyo valor debe "interpretar" (<)
-        un método del componente padre
-    -->
-
 
 </article>
